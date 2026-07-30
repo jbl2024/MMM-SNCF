@@ -1,0 +1,123 @@
+.MMM-SNCF {
+  width: min(720px, calc(100vw - 48px));
+}
+
+.MMM-SNCF .module-content {
+  overflow: hidden;
+  border: 1px solid rgba(91, 205, 255, 0.2);
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, rgba(19, 97, 168, 0.94), rgba(8, 50, 98, 0.96));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 15px 38px rgba(0, 0, 0, 0.26);
+}
+
+.MMM-SNCF .sncf-departures {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+.MMM-SNCF .sncf-departure:nth-child(odd) {
+  background: rgba(27, 121, 204, 0.34);
+}
+
+.MMM-SNCF .sncf-departure:not(:last-child) {
+  border-bottom: 1px solid rgba(116, 206, 255, 0.18);
+}
+
+.MMM-SNCF .sncf-status,
+.MMM-SNCF .sncf-details {
+  padding: 10px 14px;
+  line-height: 1.08;
+}
+
+.MMM-SNCF .sncf-status {
+  width: 112px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.MMM-SNCF .sncf-status-label {
+  color: rgba(244, 250, 255, 0.88);
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.MMM-SNCF .sncf-status-label.sncf-alert {
+  color: #ffe45c;
+  font-weight: 750;
+  text-transform: uppercase;
+  animation: sncf-pulse 1.1s ease-in-out infinite alternate;
+}
+
+.MMM-SNCF .sncf-details {
+  text-align: left;
+}
+
+.MMM-SNCF .sncf-time-line {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.MMM-SNCF .sncf-time {
+  color: #fff176;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.MMM-SNCF .sncf-base-time {
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.MMM-SNCF .sncf-direction {
+  max-width: 520px;
+  margin-top: 4px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.MMM-SNCF .sncf-message {
+  padding: 28px 22px;
+  color: #eef8ff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.MMM-SNCF .sncf-error {
+  color: #ffb7b7;
+}
+
+.MMM-SNCF .sncf-error-compact,
+.MMM-SNCF .sncf-update {
+  padding: 7px 12px 8px;
+  background: rgba(0, 0, 0, 0.18);
+  font-size: 13px;
+  text-align: center;
+}
+
+@keyframes sncf-pulse {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.45;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .MMM-SNCF .sncf-status-label.sncf-alert {
+    animation: none;
+  }
+}

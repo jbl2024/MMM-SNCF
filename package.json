@@ -1,0 +1,15 @@
+{
+  "name": "mmm-sncf",
+  "version": "1.0.0",
+  "description": "Module MagicMirror natif pour afficher les prochains départs SNCF.",
+  "main": "MMM-SNCF.js",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "magicmirror",
+    "sncf",
+    "navitia"
+  ],
+  "license": "MIT"
+}
