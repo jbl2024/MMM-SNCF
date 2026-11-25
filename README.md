@@ -25,7 +25,7 @@ Puis ajoutez le module dans `config/config.js` :
   module: "MMM-SNCF",
   position: "top_center",
   config: {
-    stationId: "stop_area:SNCF:87723585",
+    stationId: "stop_area:SNC:FR::LMU:6d9876a0-cb0a-11e8-8bfa-f784c1c7c611:",
     maximumEntries: 6,
     updateInterval: 3 * 60 * 1000
   }
@@ -36,7 +36,7 @@ Options :
 
 | Option | Valeur par défaut | Description |
 | --- | --- | --- |
-| `stationId` | `stop_area:SNCF:87723585` | Identifiant Navitia de la gare |
+| `stationId` | `stop_area:SNC:FR::LMU:6d9876a0-cb0a-11e8-8bfa-f784c1c7c611:` | Identifiant Navitia de la gare |
 | `maximumEntries` | `6` | Nombre de départs |
 | `updateInterval` | `180000` | Rafraîchissement en millisecondes, minimum 1 minute |
 | `showLastUpdate` | `false` | Affiche l'heure de la dernière mise à jour |

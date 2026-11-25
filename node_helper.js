@@ -42,7 +42,7 @@ module.exports = NodeHelper.create({
       );
       const coverage = encodeURIComponent(config.coverage || "sncf");
       const stationId = encodeURIComponent(
-        config.stationId || "stop_area:SNCF:87723585"
+        config.stationId || "stop_area:SNC:FR::LMU:6d9876a0-cb0a-11e8-8bfa-f784c1c7c611:"
       );
       const count = Number.isInteger(config.maximumEntries)
         ? config.maximumEntries

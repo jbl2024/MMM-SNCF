@@ -5,7 +5,7 @@ Module.register("MMM-SNCF", {
     apiBaseUrl: "https://api.sncf.com/v1",
     apiKey: "",
     coverage: "sncf",
-    stationId: "stop_area:SNCF:87723585",
+    stationId: "stop_area:SNC:FR::LMU:6d9876a0-cb0a-11e8-8bfa-f784c1c7c611:",
     maximumEntries: 6,
     updateInterval: 3 * 60 * 1000,
     requestTimeout: 10 * 1000,
